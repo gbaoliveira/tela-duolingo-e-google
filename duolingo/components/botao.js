@@ -1,13 +1,15 @@
 import React from "react";
-import { View, Button, StyleSheet } from "react-native";
+import { View, StyleSheet, TouchableOpacity, Text} from "react-native";
 
 const Botao = () => {
   return (
     <View style={styles.screenContainer}>
-      <Button color='#639800' title="Get started" />
-      <View style={styles.espaco}>
-      <Button color='#639800' title="I already have an account" />
-      </View>
+      <TouchableOpacity style={{ height: 70, backgroundColor:'#639800' , alignItems: 'center'}}>
+      <Text style={{color: '#fff', marginTop: 20, fontSize: 20}}>GET STARTED</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={{ height: 70, backgroundColor:'#fff', alignItems: 'center' , marginTop: 20, borderWidth: 1, borderColor:'#b5b5b5' }}>
+      <Text style={{color: '#639800', marginTop: 20, fontSize: 20}}>I ALREADY HAVE AN ACCOUNT</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -17,9 +19,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     padding: 10
   },
-    espaco: {
-    marginTop: 10
-  }
 });
 
 export default Botao;

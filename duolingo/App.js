@@ -15,7 +15,7 @@ export default function App() {
         <Text style={styles.paragraph}>
         Learn language for free.
       </Text>
-      <Text style={styles.paragraph}>
+      <Text style={styles.paragraph2}>
         Forever.
       </Text>
       <Botao />
@@ -32,6 +32,13 @@ const styles = StyleSheet.create({
     padding: 8,
   },
   paragraph: {
+    color: '#a1a1a1',
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  paragraph2: {
+    marginBottom: 150,
     color: '#a1a1a1',
     fontSize: 20,
     fontWeight: 'bold',

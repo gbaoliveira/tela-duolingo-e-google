@@ -5,17 +5,16 @@ export default function Cam() {
   return (
     <View style={styles.container}>
     <Image style={styles.camera} source={require('../assets/camera.png')} />
-    <Image style={styles.camera} source={require('../assets/dot.png')} />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginLeft: 200,
+    marginLeft: 300,
   },
   camera: { 
-    width: 100,
-    height: 100,
+    width: 50,
+    height: 50,
 }
 });

@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    padding: 24,
+    padding: 40,
   },
   logo: {
     height: 86,
@@ -23,5 +23,7 @@ const styles = StyleSheet.create({
    icon: {
     height: 128,
     width: 128,
+    marginTop: 90,
+    marginBottom: 10
   }
 });
